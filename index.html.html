@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mepham & Tsmgyl</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffe6f0, #e0c3fc);
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #e60073;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 18px;
+            color: #4d004d;
+        }
+        .heart {
+            font-size: 50px;
+            animation: pulse 1s infinite;
+            color: red;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .timeline {
+            text-align: left;
+            max-width: 700px;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .timeline h3 {
+            color: #99004d;
+        }
+        .music {
+            margin-top: 30px;
+        }
+        <style>
+    .flower {
+        position: absolute;
+        font-size: 24px;
+        animation: floatUp 2s ease-out forwards;
+        pointer-events: none;
+    }
+
+    @keyframes floatUp {
+        0% {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100px) scale(1.5);
+            opacity: 0;
+        }
+    }
+</style>
+
+    </style>
+</head>
+<body>
+
+    <h1>To My Love, Tsmgyl</h1>
+    <p>You're the best part of my life. This website is just a tiny gift to show how much I adore you.</p>
+    <div class="heart">♥</div>
+
+    <div class="gallery">
+        <h2>Our Moments Together</h2>
+        <!-- Replace with your own image URLs -->
+        <img src="memory1.jpg.jpg" alt="Memory 1">
+        <img src="memory2.jpg.jpg" alt="Memory 2">
+    </div>
+
+    <div class="timeline">
+        <h2>Our Love Journey</h2>
+        <h3>December 2020: The day we get into relationship</h3>
+        <p>We met, and everything changed.</p>
+        <h3>January 2021: First Meeting</h3>
+        <p>A memory I'll cherish forever.</p>
+        
+    </div>
+
+    <div class="music">
+        <h2>Our Song</h2>
+        <!-- Add your favorite song link -->
+        <audio controls autoplay loop>
+            <source src="my audio.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script>
+        document.addEventListener('click', function(e) {
+            const flower = document.createElement('div');
+            flower.className = 'flower';
+            flower.textContent = '🌸';  // You can use different flower emojis!
+            flower.style.left = `${e.pageX - 10}px`;
+            flower.style.top = `${e.pageY - 10}px`;
+            document.body.appendChild(flower);
+    
+            setTimeout(() => {
+                flower.remove();
+            }, 2000);
+        });
+    </script>
+    
+
+</body>
+</html>
